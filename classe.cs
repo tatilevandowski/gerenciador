@@ -1,10 +1,12 @@
-﻿
 using System;
 
-public class Class1
+namespace Gerenciador
 {
-	public Class1()
-	{
-		Console.writeLine("hello word");
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World profissional com Docker e CI/CD!");
+        }
+    }
 }
