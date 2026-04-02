@@ -2,7 +2,7 @@ name: Docker Build e Push
 
 on:
   push:
-    branches: [ "main", "teste" ] # Roda quando você der push nessas branches
+    branches: [ "main", "teste" ]
 
 jobs:
   build-and-push:
@@ -27,5 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          # Isso gera a imagem com o nome do seu repo no registro do GitHub
           tags: ghcr.io/${{ github.repository }}:latest
